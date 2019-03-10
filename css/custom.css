@@ -20,6 +20,11 @@ header .phone {
     text-align: right;
 }
 
+footer {
+    color: white;
+    background-color: black;
+}
+
 a {
     text-decoration: none;
 }
@@ -49,7 +54,7 @@ h1 {
     text-align: center;
 }
 
-.container.liip svg {
+.container .liip svg {
     float: left;
     height: 5rem;
     display: inline-block;

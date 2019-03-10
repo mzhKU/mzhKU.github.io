@@ -42,17 +42,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <h3>Vielen Dank für Euer Interesse an meiner Bewerbung f&uuml;r den Job als Python Entwickler bei</h3>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <h3>Kurz wer ich bin</h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="container liip">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
+                        <div class="liip">
                         <span class="liip-letters">
 
                         <svg class="logo__L" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.7 49">
@@ -71,7 +61,9 @@
                         </svg>
                         </span>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h3>Kurz wer ich bin</h3>
                         <p>
                             Mein Name ist Martin Hediger, ich bin 34 und aus Z&uuml;rich.
                         </p>
@@ -81,30 +73,21 @@
                         <p>
                             Einige Leute w&uuml;rden vielleicht behaupten, meine Karriere weist einen ungewohnten Verlauf auf, deshalb habe ich hier die wichtigsten Stationen aufgeschrieben:
                         </p>
+                        <h4>2005 Uni Z&uuml;rich</h4>
                         <p>
                             Nach dem Studium in Chemie, Wirtschaft und Informatik an der Uni Z&uuml;rich habe ich vier Jahre in D&auml;nemark an der Universit&auml;t Kopenhagen verbracht und in computergest&uuml;tzter Chemie promoviert.
                         </p>
-                    </div>
-                </div>
-                <div class="row torus">
-                    <div class="col-sm-12 col-md-6">
-                        <img src="ressources/torus.png" alt="torus">
-                    </div>
-                    <div class="col-sm-12 col-md-6">
+                        <h4>2009 Uni Kopenhagen</h4>
                         <p>
                             In dieser Zeit habe ich Python so richtig sch&auml;tzen und lieben gelernt. Eine besondere Freude ware es, Studenten die Programmiersprache beizubringen. Wir haben dann damit Molek&uuml;lsimulationen oder ein Ising-Modell programmiert.
                         </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                    </div>
-                    <div class="col-sm-12 col-md-6">
+                        <h4>2014 DSM </h4>
                         <p>
-                            Anschliessend bin ich wieder in die Schweiz zur&uuml;ck gekehrt und habe von 2014 - 2018 bei einem grossen Konzern in der Produktion und im Engineering gearbeitet.
+                            Anschliessend bin ich wieder in die Schweiz zur&uuml;ck gekehrt und habe von 2014 - 2018 bei DSM in der Produktion und im Engineering gearbeitet.
                             Neben der Arbeit habe ich mich aber weiterhin immer mit Software Entwicklung und insbesondere mit Data Science besch&auml;ftigt.
                             Ein Highlight war sicher die Teilnahme am Open Data Day von Open Data Z&uuml;rich wo es darum ging, die Fahrdaten vom ZVV zu analysieren.
                         </p>
+                        <h4>2018 Software Engineer / FHNW </h4>
                         <p>
                             Letztes Jahr habe ich dann beschlossen, meine Leidenschaft zu meinem beruflichen Schwerpunkt zu machen und mich entschieden, eine neue Stelle als Software Engineer zu beginnen.
                             Seit August 2018 arbeite ich jetzt also bei einer kleinen Softwarefirma in Basel, haupts&auml;chlich im Bereich Frontend - Engineering. Meine wahre Leidenschaft sind aber immer noch Python und Data Science.
@@ -119,7 +102,8 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Python</h4>
                         <p>
                             Etwas vom tollsten sind sicher die <code>List comprehensions</code> und anonyme <code>lambda</code> Funktionen.
                             Damit kann man
@@ -137,16 +121,15 @@
             </div>
 
 
-            <!--
-                </div>
-            </div>
             <div class="container">
-                            <!-- # mit List comprehensions eine Liste der geraden Zahlen von 0 - 10 erzeugen -->
-                    </div>
-                    <div class="col-sm-10 col-md-5">
-                       <h3>Oder...</h3>
-                        <p>Es ist auch unheimlich n&uuml;tzlich um Daten aus einer Datei zu verarbeiten:</p>
-                        <pre><code>mzh@datasets $ cat some_data.dat id category item
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Oder...</h4>
+                        <p>
+                            Es ist auch unheimlich n&uuml;tzlich um Daten aus einer Datei zu verarbeiten:
+                        </p>
+                        <pre><code>mzh@datasets $ cat some_data.dat
+id category item
 1 car honda
 2 car peugeot
 3 boat pedrazzini
@@ -156,23 +139,33 @@
 7 car fiat
 8 boat schlauchboot
 </code></pre>
-                        <p>Angenommen ich m&ouml;chte jetzt nach der Kategorie sortieren:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6"></div>
+                    <div class="col-sm-12 col-md-6">
+                        <p>
+                            Angenommen ich m&ouml;chte jetzt nach der Kategorie sortieren:
+                        </p>
                         <pre><code># Erstmal einlesen
 f = open("./some_data.dat", 'r')
 v = f.readlines()
 
-# Der Sort Funktion wird eine anonyme
-# Funktion uebergeben
-# und der Index des Zeileneintrages,
-# der als Sortierschluessel
+# Der Sort Funktion wird eine anonyme Funktion uebergeben
+# und der Index des Zeileneintrages, der als Sortierschluessel
 # verwendet werden soll.
 v.sort(key=lambda i: i.split()[1])
 </code></pre>
-                        <p>Um in der Ausgabe die erste Zeile zu &uuml;berspringen, k&ouml;nnen wir einen Listen-Trick anwenden</p>
+                        <p>
+                            Um in der Ausgabe die erste Zeile zu &uuml;berspringen, k&ouml;nnen wir einen Listen-Trick anwenden:
+                        </p>
                         <pre><code>for l in v[1:]:
     print l.split('\n')[0]</code></pre>
-                        <p>...ein einfacher Trick, aber h&auml;ufig verwendet.</p>
-                        <pre><code>mzh@datasets $ python sortvehicles.py 5 boat boesch
+                        <p>
+                            Die Liste ist jetzt nach Fahrzeugart sortiert.
+                        </p>
+                        <pre><code>mzh@datasets $ python sortvehicles.py
+5 boat boesch
 6 boat pedallo
 8 boat schlauchboot
 1 car honda
@@ -180,16 +173,41 @@ v.sort(key=lambda i: i.split()[1])
 4 car opel
 7 car fiat</code></pre>
                     </div>
-            -->
-
-                    <!--
-                    <div class="col-sm-10">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <p>
+                            Es gibt nat&uuml;rlich noch endlos weitere Anwendungen.
+                            <a href="https://github.com/mzhKU?tab=repositories">In meinem Repo sind noch weitere Beispiele.</a>
+                        </p>
                     </div>
-                    <div class="col-sm-10">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Privat</h4>
+                        <p>
+                            Ich bin eine vielseitig interessierte Person, dh. ich mache gerne Sport, ich gehe sehr gerne in die Natur etwa zum Segeln oder Wandern und ich interessiere mich f&uuml;r Wirtschaft und Geschichte.
+                        </p>
+                        <p>
+                            Auf jeden Fall, vielen Dank f&uuml; euer Interesse und ich freue mich auf eure R&uuml;ckmeldung.
+                        </p>
                     </div>
-                    -->
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>
+                            Programmed with <span>&#9829;</span> in Brugg, AG, on Sunday, 10 of March, 2019.
+                        </p>
+                    </div>
+                </div>
+        </footer>
     </body>
 </html>
