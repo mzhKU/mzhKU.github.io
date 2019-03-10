@@ -16,10 +16,6 @@ header a {
     color: white;
 }
 
-header .phone {
-    text-align: right;
-}
-
 footer {
     color: white;
     background-color: black;
@@ -62,8 +58,4 @@ h1 {
 
 .liip-letters {
     white-space: nowrap;
-}
-
-.torus img {
-    width: 100%;
 }
