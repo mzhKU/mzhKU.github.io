@@ -1,5 +1,143 @@
-<html>
+<!doctype html>
+<html lang="de">
+    <head>
+        <title>ZHPY</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/custom.css">
+        <link rel="stylesheet"
+              href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+    </head>
     <body>
-        Hello
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="mail col-sm-12 col-md-6 col-xs-12">
+                        <a href="mailto:ma.hed@bluewin.ch">Martin Hediger</a>
+                    </div>
+                    <div class="phone col-sm-12 col-md-6 col-xs-12">
+                        <a href="tel:+41763304776">0763304776</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+
+            <div class="welcome">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <h1>Hallo</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container liip">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <span class="liip-letters">
+
+                        <svg class="logo__L" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.7 49">
+                            <path d="M0.1,46.8h29.6v-9.7H11.2V2.5H0.4v44.3H0.1z M0.1,46.8h29.6v-9.7H11.2V2.5H0.4v44.3H0.1z"></path>
+                        </svg>
+                        <svg class="logo__II" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.8 49">
+                            <path d="M13.5,48.3L35.2,5.1l-9.6-4.9L3.8,43.4L13.5,48.3 M38.6,48.3L60.4,5.1l-9.7-4.9L28.9,43.4
+  L38.6,48.3            "></path>
+                        </svg>
+                            <path d="M3.4,2.5v44.3h10.8V31h6.6c9.8,0,15-7,15-14.2c0-7.3-5.3-14.2-15-14.2H3.4L3.4,2.5z M14.3,12.3
+  h6.1c3,0,4        .7,2.2,4.7,4.5s-1.7,4.5-4.7,4.5h-6.1V12.3L14.3,12.3z"></path>
+                        </svg>
+                        <svg class="logo__P" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.9 49">
+                            <path d="M3.4,2.5v44.3h10.8V31h6.6c9.8,0,15-7,15-14.2c0-7.3-5.3-14.2-15-14.2H3.4L3.4,2.5z M14.3,12.3
+  h6.1c3,0,4.7,2.2,4.7,4.5s-1.7,4.5-4.7,4.5h-6.1V12.3L14.3,12.3z"></path>
+                        </svg>
+                        </span>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h3>Vielen Dank für Euer Interesse an meiner Bewerbung f&uuml;r den Job als Python Entwickler.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div class="container">
+                <div class="row">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-10 col-md-5">
+                        <p>Also ihr sucht jemand der gerne mit Python programmiert.. da dachte ich, ich z&auml;hle ganz kurz auf, was mir so als erstes dazu einf&auml;llt und was mir so gut daran gef&auml;llt.
+                        <p>Zum Beispiel..</p>
+                            <!-- # mit List comprehensions eine Liste der geraden Zahlen von 0 - 10 erzeugen -->
+                        <pre><code class=""># In place eine List # mit geraden Zahlen erzeugen
+>>> x=[x for x in range(10) if x%2==0]
+>>> x
+[0, 2, 4, 6, 8]
+# und dann bspw. diese Zahlen mit einer
+# Lambda Funktion aufsummieren.
+>>> reduce(lambda i,j: i+j, x)
+20</code></pre>
+                    </div>
+                    <div class="col-sm-10 col-md-5">
+                       <h3>Oder...</h3>
+                        <p>Es ist auch unheimlich n&uuml;tzlich um Daten aus einer Datei zu verarbeiten:</p>
+                        <pre><code>mzh@datasets $ cat some_data.dat id category item
+1 car honda
+2 car peugeot
+3 boat pedrazzini
+4 car opel
+5 boat boesch
+6 boat pedallo
+7 car fiat
+8 boat schlauchboot
+</code></pre>
+                        <p>Angenommen ich m&ouml;chte jetzt nach der Kategorie sortieren:</p>
+                        <pre><code># Erstmal einlesen
+f = open("./some_data.dat", 'r')
+v = f.readlines()
+
+# Der Sort Funktion wird eine anonyme
+# Funktion uebergeben
+# und der Index des Zeileneintrages,
+# der als Sortierschluessel
+# verwendet werden soll.
+v.sort(key=lambda i: i.split()[1])
+</code></pre>
+                        <p>Um in der Ausgabe die erste Zeile zu &uuml;berspringen, k&ouml;nnen wir einen Listen-Trick anwenden</p>
+                        <pre><code>for l in v[1:]:
+    print l.split('\n')[0]</code></pre>
+                        <p>...ein einfacher Trick, aber h&auml;ufig verwendet.</p>
+                        <pre><code>mzh@datasets $ python sortvehicles.py 5 boat boesch
+6 boat pedallo
+8 boat schlauchboot
+1 car honda
+2 car peugeot
+4 car opel
+7 car fiat</code></pre>
+                    </div>
+            -->
+
+                    <!--
+                    <div class="col-sm-10">
+                    </div>
+                    <div class="col-sm-10">
+                        <h2>&Uuml;ber mich</h2>
+                        <p>Einige Leute w&uuml;rden vielleicht behaupten, meine Karriere weist einen ungewohnten Verlauf auf. Aber was ist schon ein regul&auml;rer Verlauf? Anyway, nach dem Studium in Chemie, Wirtschaft und Informatik an der Uni Z&uuml;rich habe ich vier Jahre in D&auml;nemark an der Universit&auml;t Kopenhagen verbracht und in computergest&uuml;tzter Chemie promoviert.</p> 
+                        <p>In dieser Zeit habe ich Python so richtig sch&auml;tzen und lieben gelernt. Eine besondere Freude ware es, Studenten die Programmiersprache beizubringen. Wir haben dann damit Molek&uuml;lsimulationen oder ein einfaches Ising-Modell programmiert.</p>
+                        <p>Anschliessend bin ich wieder in die Schweiz zur&uuml;ck gekehrt und habe bei einem grossen Konzern in der Produktion und im Engineering gearbeitet.
+                        <p>Letztes Jahr habe ich dann beschlossen, meine Leidenschaft zu meinem beruflichen Schwerpunkt zu machen und mich entschieden, eine Stelle als Software Entwickler zu suchen. Seit August 2018 arbeite ich jetzt also bei einer kleinen Softwarefirma in Basel, haupts&auml;chlich im Bereich Frontend - Engineering. Meine wahre Leidenschaft sind aber immer noch Python und Data Science und als ich deshalb die Stelle bei Liip gesehen habe konnte ich nicht anders als denken:</p>
+                        <h1>das w&auml;re meine absolute Traumstelle</h1>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </main>
     </body>
 </html>
